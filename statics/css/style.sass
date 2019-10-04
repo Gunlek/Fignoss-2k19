@@ -1,0 +1,64 @@
+$menu-height: 50px
+$menu-items-distance: 5px
+
+@font-face
+    font-family: "Gravity standard"
+    src: url("/fonts/Gravity-Regular.otf", format("truetype"))
+
+h1, h2, h3, h4, h5, h6
+    margin: 0 0
+    
+.navbar
+    color: red
+    position: absolute
+    font-family: sans-serif
+    top: 0
+    left: 0
+    right: 0
+    height: $menu-height
+
+    hr
+        position: absolute
+        top: $menu-height - 5px
+        width: 90%
+        margin-left: 5%
+        color: #ecd2b3
+
+    .left-nav
+        position: absolute
+        left: 0
+        top: 0
+        line-height: $menu-height
+        margin: 0 10px
+    
+    .right-nav
+        position: absolute
+        right: 0
+        top: 0
+        margin-right: 10px
+
+        ul
+            list-style: none
+            margin: 0 0
+
+            li
+                float: left
+                line-height: $menu-height
+                margin: 0 $menu-items-distance
+
+                a
+                    text-decoration: none
+                    font-size: 20px
+                    color: #ecd2b3
+
+body, html
+    padding: 0 0
+    margin: 0 0
+    
+.page
+    height: 100%
+    background-image: url("/img/background.png")
+
+#first_home
+    padding-top: 70px
+    color: #fff
