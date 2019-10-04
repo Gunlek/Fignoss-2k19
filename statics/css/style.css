@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "Gravity standard";
-  src: url("/fonts/Gravity-Regular.otf", format("truetype"));
+  font-family: "gravity";
+  src: url("/fonts/Gravity-Light.otf");
+}
+@font-face {
+  font-family: "salvalyn";
+  src: url("/fonts/Salvalyn-Demo.ttf");
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0;
@@ -9,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   color: red;
   position: absolute;
-  font-family: sans-serif;
+  font-family: gravity;
   top: 0;
   left: 0;
   right: 0;
@@ -22,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
   margin-left: 5%;
   color: #ecd2b3;
+  border: 0.5px solid rgba(236, 210, 179, 0.2);
 }
 
 .navbar .left-nav {
@@ -67,16 +72,52 @@ body, html {
 }
 
 #first_home {
-  padding-top: 70px;
-  color: #fff;
+  height: 100%;
+  text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+#first_home .main-brand {
+  font-family: salvalyn;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#first_home .main-brand h1 {
+  font-size: 75px;
+  background: radial-gradient(#fff, #333);
+  background-clip: text;
+  color: transparent;
+}
+
+#first_home .main-brand h2 {
+  font-size: 50px;
+  color: #ecd2b3;
+}
+
+#first_home .low-brand {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 50px;
+  font-family: gravity;
+}
+
+#first_home .low-brand h3 {
+  font-size: 40px;
+  background: radial-gradient(#fff, #333);
+  background-clip: text;
+  color: transparent;
+}
+
+#first_home .low-brand h4 {
+  font-size: 27px;
+  background: radial-gradient(#fff, #333);
+  background-clip: text;
+  color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
