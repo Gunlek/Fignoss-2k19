@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   height: 50px;
+  z-index: 99;
 }
 
 .navbar hr {
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
   margin-left: 5%;
   color: #ecd2b3;
-  border: 0.5px solid rgba(236, 210, 179, 0.2);
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
 }
 
 .navbar .left-nav {
@@ -52,13 +53,35 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .right-nav ul li {
   float: left;
   line-height: 50px;
-  margin: 0 5px;
+  margin: 0 15px;
+  position: relative;
 }
 
 .navbar .right-nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: #ecd2b3;
+  font-weight: normal;
+  transition: font-weight 0.2s ease;
+}
+
+.navbar .right-nav ul li .slider {
+  border-bottom: 2px solid #ecd2b3;
+  width: 0%;
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  background-color: #ecd2b3;
+  transition: width 0.3s ease;
+}
+
+.navbar .right-nav ul li:hover .slider {
+  width: 100%;
+}
+
+.navbar .right-nav ul li:hover a {
+  font-weight: bold;
+  transition: font-weight 0.2s ease;
 }
 
 body, html {
@@ -68,15 +91,11 @@ body, html {
 
 .page {
   height: 100%;
-  background-image: url("/img/background.png");
-}
-
-#first_home {
-  height: 100%;
+  position: relative;
   text-align: center;
 }
 
-#first_home .main-brand {
+.page .main-brand {
   font-family: salvalyn;
   position: absolute;
   top: 50%;
@@ -84,19 +103,19 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-#first_home .main-brand h1 {
+.page .main-brand h1 {
   font-size: 75px;
   background: radial-gradient(#fff, #333);
   background-clip: text;
   color: transparent;
 }
 
-#first_home .main-brand h2 {
+.page .main-brand h2 {
   font-size: 50px;
   color: #ecd2b3;
 }
 
-#first_home .low-brand {
+.page .low-brand {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -104,20 +123,38 @@ body, html {
   font-family: gravity;
 }
 
-#first_home .low-brand h3 {
+.page .low-brand h3 {
   font-size: 40px;
   background: radial-gradient(#fff, #333);
   background-clip: text;
   color: transparent;
 }
 
-#first_home .low-brand h4 {
+.page .low-brand h4 {
   font-size: 27px;
   background: radial-gradient(#fff, #333);
   background-clip: text;
   color: transparent;
 }
 
+#first-home {
+  background-image: url("/img/background.png");
+}
+
+#second-home h2 {
+  font-family: gravity;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

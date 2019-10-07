@@ -1,5 +1,5 @@
 $menu-height: 50px
-$menu-items-distance: 5px
+$menu-items-distance: 15px
 $font-color-1: #ecd2b3
 
 @font-face
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6
     left: 0
     right: 0
     height: $menu-height
+    z-index: 99
 
     hr
         position: absolute
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6
         width: 90%
         margin-left: 5%
         color: #ecd2b3
-        border: 0.5px solid rgba(236,210,179, 0.2)
+        border: 0.5px solid rgba(236,210,179, 0.6)
 
     .left-nav
         position: absolute
@@ -62,11 +63,32 @@ h1, h2, h3, h4, h5, h6
                 float: left
                 line-height: $menu-height
                 margin: 0 $menu-items-distance
+                position: relative
 
                 a
                     text-decoration: none
                     font-size: 20px
-                    color: #ecd2b3
+                    color: $font-color-1
+                    font-weight: normal
+                    transition: font-weight 0.2s ease
+
+                .slider
+                    border-bottom: 2px solid $font-color-1
+                    width: 0%
+                    display: block
+                    position: absolute
+                    bottom: 10%
+                    background-color: $font-color-1
+                    transition: width 0.3s ease
+
+            li:hover
+                
+                .slider
+                    width:100%
+
+                a
+                    font-weight: bold
+                    transition: font-weight 0.2s ease
 
 body, html
     padding: 0 0
@@ -74,15 +96,12 @@ body, html
     
 .page
     height: 100%
-    background-image: url("/img/background.png")
-
-#first_home
-    height: 100%
+    position: relative
     text-align: center
 
     .main-brand
         font-family: salvalyn
-        @include centered       
+        @include centered    
 
         h1
             font-size: 75px
@@ -106,3 +125,10 @@ body, html
         h4
             font-size: 27px
             @include circular-gradient(#fff, #333)
+
+#first-home
+    background-image: url("/img/background.png")
+
+#second-home
+    h2
+        font-family: gravity
