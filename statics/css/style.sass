@@ -1,15 +1,26 @@
-$menu-height: 75px
-$menu-items-distance: 20px
+$menu-height: 100px
+$menu-items-distance: 3vw
 $font-color-1: #ecd2b3
 $nav-opacity: 0.4
 
 // Backgrounds
-$home-background-1: url("/img/home_background_3.png")
-$home-background-2: url("/img/home_background_2.png")
+$home-background-1: url("/img/compressor/home_background_3-compressor.png")
+$home-background-2: url("/img/compressor/home_background_2-compressor.png")
+$home-background-3: url("/img/compressor/background-compressor.png")
 
 @font-face
     font-family: "gravity"
     src: url("/fonts/Gravity-Light.otf")
+    font-weight: normal
+
+@font-face
+    font-family: "gravity"
+    src: url("/fonts/Gravity-Regular.otf")
+    font-weight: bold
+
+@font-face
+    font-family: "gravity-light"
+    src: url("/fonts/Gravity-UltraLight.otf")
 
 @font-face
     font-family: "salvalyn"
@@ -24,6 +35,7 @@ $home-background-2: url("/img/home_background_2.png")
 @mixin circular-gradient($color1, $color2)
     background: radial-gradient($color1, $color2)
     background-clip: text
+    -webkit-background-clip: text
     color: transparent
 
 h1, h2, h3, h4, h5, h6
@@ -42,11 +54,12 @@ h1, h2, h3, h4, h5, h6
 
     hr
         position: absolute
-        top: $menu-height - 5px
+        top: $menu-height - 10px
         width: 90%
-        margin-left: 5%
+        right: 0
         color: #ecd2b3
         border: 0.5px solid rgba(236,210,179, 0.6)
+        padding: 0 0
 
     .left-nav
         position: absolute
@@ -54,6 +67,10 @@ h1, h2, h3, h4, h5, h6
         top: 0
         line-height: $menu-height
         margin: 0 10px
+
+        img
+            margin: 5px 20px
+            height: $menu-height - 10px
     
     .right-nav
         position: absolute
@@ -73,10 +90,9 @@ h1, h2, h3, h4, h5, h6
 
                 a
                     text-decoration: none
-                    font-size: 25px
+                    font-size: 2vw
                     color: $font-color-1
-                    font-weight: normal
-                    transition: font-weight 0.2s ease
+                    transition: color 0.2s ease
 
                 .slider
                     border-bottom: 2px solid $font-color-1
@@ -93,8 +109,8 @@ h1, h2, h3, h4, h5, h6
                     width:100%
 
                 a
-                    font-weight: bold
-                    transition: font-weight 0.2s ease
+                    color: white
+                    transition: color 0.2s ease
 
 body, html
     padding: 0 0
@@ -144,9 +160,47 @@ body, html
         h2
             font-family: gravity
 
+.section-header
+    
+    h1
+        display: inline-block
+        color: $font-color-1
+        font-size: 5vw
+        font-family: salvalyn
+    
+    hr
+        display: inline-block
+        border: 1px solid $font-color-1
+        line-height: 50px
+
+#map-section
+
+    background-image: $home-background-3
+    background-size: cover
+    padding-top: $menu-height
+
+    .section-header
+        h1
+            width: 50%
+        hr
+            width: 20%
+    
+    strong
+        font-weight: bold
+    p
+        color: white
+        font-family: gravity
+        font-size: 2vw
+
+    #map
+        margin: 5px 0
+        height: 50%
+        width: 80%
+        margin-left: 10%
+
 #sponsors
 
-    background-image: $home-background-1
+    background-image: $home-background-3
     background-size: cover
     padding-top: 50px
     position: relative
@@ -155,14 +209,7 @@ body, html
     
         h1
             width: 25%
-            display: inline-block
-            color: $font-color-1
-            font-size: 80px
-            font-family: salvalyn
-        
         hr
-            display: inline-block
-            border: 1px solid $font-color-1
             width: 32.5%
     
     p
@@ -179,17 +226,6 @@ body, html
         bottom: 5%
         left: 5%
         width: 90% 
-
-#map-section
-
-    padding-top: $menu-height
-    background-image: $home-background-1
-
-    #map
-        margin: 5px 0
-        height: 75%
-        width: 80%
-        margin-left: 10%
 
 .row
     position: relative
