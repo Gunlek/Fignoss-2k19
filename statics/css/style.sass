@@ -1,6 +1,11 @@
 $menu-height: 75px
 $menu-items-distance: 20px
 $font-color-1: #ecd2b3
+$nav-opacity: 0.4
+
+// Backgrounds
+$home-background-1: url("/img/home_background_3.png")
+$home-background-2: url("/img/home_background_2.png")
 
 @font-face
     font-family: "gravity"
@@ -33,6 +38,7 @@ h1, h2, h3, h4, h5, h6
     right: 0
     height: $menu-height
     z-index: 99
+    background-color: rgba(0, 0, 0, $nav-opacity)
 
     hr
         position: absolute
@@ -127,8 +133,70 @@ body, html
             @include circular-gradient(#e9cfb0, #8a634e)
 
 #first-home
-    background-image: url("/img/background.png")
+    background-image: $home-background-1
+    background-size: cover
 
 #second-home
-    h2
+    background-image: $home-background-2
+    background-size: cover
+
+    .main-brand
+        h2
+            font-family: gravity
+
+#sponsors
+
+    background-image: $home-background-1
+    background-size: cover
+    padding-top: 50px
+    position: relative
+
+    .section-header
+    
+        h1
+            width: 25%
+            display: inline-block
+            color: $font-color-1
+            font-size: 80px
+            font-family: salvalyn
+        
+        hr
+            display: inline-block
+            border: 1px solid $font-color-1
+            width: 32.5%
+    
+    p
         font-family: gravity
+        color: $font-color-1
+        font-size: 40px
+        width: 50%
+        text-align: center
+        margin: 0 auto
+        margin-top: 5%
+
+    .brands
+        position: absolute
+        bottom: 5%
+        left: 5%
+        width: 90% 
+
+#map-section
+
+    padding-top: $menu-height
+    background-image: $home-background-1
+
+    #map
+        margin: 5px 0
+        height: 75%
+        width: 80%
+        margin-left: 10%
+
+.row
+    position: relative
+    width: 100%
+    text-align: left
+    min-height: 10%
+
+    .col-2
+        width: 15%
+        display: inline-block

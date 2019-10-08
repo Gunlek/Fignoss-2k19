@@ -1,0 +1,33 @@
+{% include 'utils/header.html.twig' %}
+{% block title %}<title>Accueil &bull; Fignoss 2019</title>{% endblock %}
+
+<body>
+    {% include 'utils/menu.html.twig' %}
+    <div class="page" id="map-section">
+        <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+        </style>
+
+        <div id="map"></div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+            // The location of Uluru
+            var campus_lille = {lat: 50.628564, lng: 3.071217};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 17, center: campus_lille});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: campus_lille, map: map});
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8YFGoX8OhovHfCF0b-FN_cJ3kN6u3fIU&callback=initMap">
+        </script>
+
+    </div>
+</body>

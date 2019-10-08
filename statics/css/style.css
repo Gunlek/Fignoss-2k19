@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   height: 75px;
   z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar hr {
@@ -138,15 +139,81 @@ body, html {
 }
 
 #first-home {
-  background-image: url("/img/background.png");
+  background-image: url("/img/home_background_3.png");
+  background-size: cover;
 }
 
-#second-home h2 {
+#second-home {
+  background-image: url("/img/home_background_2.png");
+  background-size: cover;
+}
+
+#second-home .main-brand h2 {
   font-family: gravity;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+#sponsors {
+  background-image: url("/img/home_background_3.png");
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+}
+
+#sponsors .section-header h1 {
+  width: 25%;
+  display: inline-block;
+  color: #ecd2b3;
+  font-size: 80px;
+  font-family: salvalyn;
+}
+
+#sponsors .section-header hr {
+  display: inline-block;
+  border: 1px solid #ecd2b3;
+  width: 32.5%;
+}
+
+#sponsors p {
+  font-family: gravity;
+  color: #ecd2b3;
+  font-size: 40px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#sponsors .brands {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+}
+
+#map-section {
+  padding-top: 75px;
+  background-image: url("/img/home_background_3.png");
+}
+
+#map-section #map {
+  margin: 5px 0;
+  height: 75%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  min-height: 10%;
+}
+
+.row .col-2 {
+  width: 15%;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

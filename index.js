@@ -8,4 +8,8 @@ app.get('/', (req, res) =>{
     res.render('index.html.twig');
 });
 
+app.get('/comment-venir/', (req, res) => {
+    res.render('comment-venir.html.twig');
+});
+
 app.listen(8080);
