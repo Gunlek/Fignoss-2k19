@@ -17,13 +17,13 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 75px;
   z-index: 99;
 }
 
 .navbar hr {
   position: absolute;
-  top: 45px;
+  top: 70px;
   width: 90%;
   margin-left: 5%;
   color: #ecd2b3;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   top: 0;
-  line-height: 50px;
+  line-height: 75px;
   margin: 0 10px;
 }
 
@@ -52,14 +52,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .right-nav ul li {
   float: left;
-  line-height: 50px;
-  margin: 0 15px;
+  line-height: 75px;
+  margin: 0 20px;
   position: relative;
 }
 
 .navbar .right-nav ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   color: #ecd2b3;
   font-weight: normal;
   transition: font-weight 0.2s ease;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   display: block;
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   background-color: #ecd2b3;
   transition: width 0.3s ease;
 }
@@ -105,7 +105,7 @@ body, html {
 
 .page .main-brand h1 {
   font-size: 75px;
-  background: radial-gradient(#fff, #333);
+  background: radial-gradient(#e9cfb0, #8a634e);
   background-clip: text;
   color: transparent;
 }
@@ -124,15 +124,15 @@ body, html {
 }
 
 .page .low-brand h3 {
-  font-size: 40px;
-  background: radial-gradient(#fff, #333);
+  font-size: 60px;
+  background: radial-gradient(#e9cfb0, #8a634e);
   background-clip: text;
   color: transparent;
 }
 
 .page .low-brand h4 {
-  font-size: 27px;
-  background: radial-gradient(#fff, #333);
+  font-size: 40px;
+  background: radial-gradient(#e9cfb0, #8a634e);
   background-clip: text;
   color: transparent;
 }
@@ -145,14 +145,6 @@ body, html {
   font-family: gravity;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
