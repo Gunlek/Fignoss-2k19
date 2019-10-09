@@ -1,16 +1,14 @@
 @font-face {
-  font-family: "gravity";
-  src: url("/fonts/Gravity-Light.otf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "gravity";
-  src: url("/fonts/Gravity-Regular.otf");
-  font-weight: bold;
-}
-@font-face {
   font-family: "gravity-light";
   src: url("/fonts/Gravity-UltraLight.otf");
+}
+@font-face {
+  font-family: "gravity-normal";
+  src: url("/fonts/Gravity-Light.otf");
+}
+@font-face {
+  font-family: "gravity-bold";
+  src: url("/fonts/Gravity-Regular.otf");
 }
 @font-face {
   font-family: "salvalyn";
@@ -23,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   color: red;
   position: absolute;
-  font-family: gravity;
+  font-family: gravity-normal;
   top: 0;
   left: 0;
   right: 0;
@@ -111,6 +109,10 @@ body, html {
   text-align: center;
 }
 
+.page .container {
+  padding-top: 100px;
+}
+
 .page .main-brand {
   font-family: salvalyn;
   position: absolute;
@@ -137,7 +139,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, 0);
   bottom: 50px;
-  font-family: gravity;
+  font-family: gravity-normal;
 }
 
 .page .low-brand h3 {
@@ -167,13 +169,13 @@ body, html {
 }
 
 #second-home .main-brand h2 {
-  font-family: gravity;
+  font-family: gravity-light;
 }
 
 .section-header h1 {
   display: inline-block;
   color: #ecd2b3;
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-family: salvalyn;
 }
 
@@ -183,10 +185,39 @@ body, html {
   line-height: 50px;
 }
 
+#gala-section {
+  background-image: url("/img/compressor/background-compressor.png");
+  position: relative;
+}
+
+#gala-section .container {
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+#gala-section h1 {
+  width: 30%;
+}
+
+#gala-section hr {
+  width: 30%;
+}
+
+#gala-section #droitEntree {
+  position: absolute;
+  font-family: gravity-light;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: #ecd2b3;
+}
+
 #map-section {
   background-image: url("/img/compressor/background-compressor.png");
   background-size: cover;
-  padding-top: 100px;
+  min-height: 100%;
+  height: auto;
 }
 
 #map-section .section-header h1 {
@@ -198,12 +229,12 @@ body, html {
 }
 
 #map-section strong {
-  font-weight: bold;
+  font-family: gravity-bold;
 }
 
 #map-section p {
   color: white;
-  font-family: gravity;
+  font-family: gravity-normal;
   font-size: 2vw;
 }
 
@@ -230,7 +261,7 @@ body, html {
 }
 
 #sponsors p {
-  font-family: gravity;
+  font-family: gravity-normal;
   color: #ecd2b3;
   font-size: 40px;
   width: 50%;
@@ -258,32 +289,28 @@ body, html {
   display: inline-block;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+.row .col-4 {
+  width: 33%;
+  display: inline-block;
+}
+
+.counter-group {
+  text-align: center;
+  font-family: gravity-light;
+}
+
+.counter-group .counter {
+  width: 100% !important;
+  margin: 0 auto;
+  color: white;
+  font-size: 8vw;
+}
+
+.counter-group h3 {
+  font-size: 2vw;
+  color: #ecd2b3;
+}
+
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 

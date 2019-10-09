@@ -4,30 +4,33 @@
 <body>
     {% include 'utils/menu.html.twig' %}
     <div class="page" id="map-section">
-        <div class="section-header">
-            <hr><h1>Comment venir</h1><hr>
+        <div class="container">
+            <div class="section-header">
+                <hr><h1>Comment venir</h1><hr>
+            </div>
+
+            <p>L'adresse se situe au <strong>8 Boulevard Louis XIV</strong> à <strong>Lille</strong>, 59800.</p>
+            <p>Pour y accéder en transports en commun:</p>
+            <p>- Arrêt Métro: Lille Grand Palais</p>
+
+            <div id="map"></div>
+            <script>
+                // Initialize and add the map
+                function initMap() {
+                // The location of Uluru
+                var campus_lille = {lat: 50.628564, lng: 3.071217};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 17, center: campus_lille});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: campus_lille, map: map});
+                }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8YFGoX8OhovHfCF0b-FN_cJ3kN6u3fIU&callback=initMap">
+            </script>
+            <br/>
         </div>
-
-        <p>L'adresse se situe au <strong>8 Boulevard Louis XIV</strong> à <strong>Lille</strong>, 59800.</p>
-        <p>Pour y accéder en transports en commun:</p>
-        <p>- Arrêt Métro: Lille Grand Palais</p>
-
-        <div id="map"></div>
-        <script>
-            // Initialize and add the map
-            function initMap() {
-            // The location of Uluru
-            var campus_lille = {lat: 50.628564, lng: 3.071217};
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 17, center: campus_lille});
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({position: campus_lille, map: map});
-            }
-        </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8YFGoX8OhovHfCF0b-FN_cJ3kN6u3fIU&callback=initMap">
-        </script>
 
     </div>
 </body>

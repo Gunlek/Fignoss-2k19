@@ -1,0 +1,62 @@
+{% include 'utils/header.html.twig' %}
+{% block title %}<title>Accueil &bull; Fignoss 2019</title>{% endblock %}
+
+<body>
+    {% include 'utils/menu.html.twig' %}
+    <div id="gala-section">
+        <div class="container">
+            <div class="section-header">
+                <hr><h1>Le Gala</h1><hr>
+            </div>
+
+            <img style="width: 100%;" src="/img/compressor/gala-image.png" alt="Image Gala 2018" />
+        </div>
+    </div>
+
+    <div class="page" id="gala-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 counter-group">
+                    <h1 class="counter"><span class="counterVar" data-count="4000">0</span></h1>
+                    <h3>PERSONNES</h3>
+                </div>
+
+                <div class="col-4 counter-group">
+                    <h1 class="counter"><span class="counterVar" data-count="17">0</span></h1>
+                    <h3>AMBIANCES</h3>
+                </div>
+
+                <div class="col-4 counter-group">
+                    <h1 class="counter"><span class="counterVar" data-count="59">0</span><sup>e</sup></h1>
+                    <h3>EDITION</h3>
+                </div>
+            </div>
+        </div>
+        <h2 id="droitEntree">L'organisation se réserve le droit d'entrée</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('.counterVar').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                
+                $({ countNum: $this.text()}).animate({
+                    countNum: countTo
+                    },
+
+                    {
+
+                    duration: 2000,
+                    easing:'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+
+                });  
+            });
+    </script>
+</body>

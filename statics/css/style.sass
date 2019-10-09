@@ -9,18 +9,16 @@ $home-background-2: url("/img/compressor/home_background_2-compressor.png")
 $home-background-3: url("/img/compressor/background-compressor.png")
 
 @font-face
-    font-family: "gravity"
-    src: url("/fonts/Gravity-Light.otf")
-    font-weight: normal
-
-@font-face
-    font-family: "gravity"
-    src: url("/fonts/Gravity-Regular.otf")
-    font-weight: bold
-
-@font-face
     font-family: "gravity-light"
     src: url("/fonts/Gravity-UltraLight.otf")
+
+@font-face
+    font-family: "gravity-normal"
+    src: url("/fonts/Gravity-Light.otf")
+
+@font-face
+    font-family: "gravity-bold"
+    src: url("/fonts/Gravity-Regular.otf")
 
 @font-face
     font-family: "salvalyn"
@@ -44,7 +42,7 @@ h1, h2, h3, h4, h5, h6
 .navbar
     color: red
     position: absolute
-    font-family: gravity
+    font-family: gravity-normal
     top: 0
     left: 0
     right: 0
@@ -121,6 +119,9 @@ body, html
     position: relative
     text-align: center
 
+    .container
+        padding-top: $menu-height
+
     .main-brand
         font-family: salvalyn
         @include centered    
@@ -138,7 +139,7 @@ body, html
         left: 50%
         transform: translate(-50%, 0)
         bottom: 50px
-        font-family: gravity
+        font-family: gravity-normal
 
         h3
             font-size: 60px
@@ -158,14 +159,14 @@ body, html
 
     .main-brand
         h2
-            font-family: gravity
+            font-family: gravity-light
 
 .section-header
     
     h1
         display: inline-block
         color: $font-color-1
-        font-size: 5vw
+        font-size: 4.5vw
         font-family: salvalyn
     
     hr
@@ -173,11 +174,35 @@ body, html
         border: 1px solid $font-color-1
         line-height: 50px
 
+#gala-section
+    background-image: $home-background-3
+    position: relative
+
+    .container
+        padding-top: $menu-height
+        position: relative
+        text-align: center
+
+    h1
+        width: 30%
+    
+    hr
+        width: 30%
+
+    #droitEntree
+        position: absolute
+        font-family: gravity-light
+        bottom: 5%
+        width: 100%
+        text-align: center
+        color: $font-color-1
+
 #map-section
 
     background-image: $home-background-3
     background-size: cover
-    padding-top: $menu-height
+    min-height: 100%
+    height: auto
 
     .section-header
         h1
@@ -186,10 +211,10 @@ body, html
             width: 20%
     
     strong
-        font-weight: bold
+        font-family: gravity-bold
     p
         color: white
-        font-family: gravity
+        font-family: gravity-normal
         font-size: 2vw
 
     #map
@@ -213,7 +238,7 @@ body, html
             width: 32.5%
     
     p
-        font-family: gravity
+        font-family: gravity-normal
         color: $font-color-1
         font-size: 40px
         width: 50%
@@ -236,3 +261,21 @@ body, html
     .col-2
         width: 15%
         display: inline-block
+
+    .col-4
+        width: 33%
+        display: inline-block
+
+.counter-group
+    text-align: center
+    font-family: gravity-light
+    
+    .counter
+        width: 100% !important
+        margin: 0 auto
+        color: white
+        font-size: 8vw
+    
+    h3
+        font-size: 2vw
+        color: $font-color-1
