@@ -16,8 +16,8 @@ app.get('/le-gala/', (req, res) => {
     res.render('le-gala.html.twig');
 });
 
-app.get('/countup.min.js', function(req, res) {
-    res.sendFile(__dirname + '/node_modules/countup.js/dist/countup.min.js');
+app.get('/reservation/', (req, res) => {
+    res.render('reservation.html.twig');
 });
 
 app.listen(1234);

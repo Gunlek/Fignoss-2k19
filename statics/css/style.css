@@ -316,6 +316,38 @@ body, html {
   color: #ecd2b3;
 }
 
+#reservation {
+  height: 100%;
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+}
+
+#reservation .section-header h1 {
+  width: 30%;
+}
+
+#reservation .section-header hr {
+  width: 30%;
+}
+
+#reservation .container {
+  padding-top: 100px;
+}
+
+#reservation .container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: gravity-light;
+  width: 100%;
+  text-align: center;
+  color: #ecd2b3;
+  font-size: 4vw;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
