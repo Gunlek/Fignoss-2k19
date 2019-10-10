@@ -20,6 +20,10 @@ app.get('/reservation/', (req, res) => {
     res.render('reservation.html.twig');
 });
 
+app.get('/artistes/', (req, res) => {
+    res.render('artistes.html.twig');
+});
+
 app.get('/contact/', (req, res) => {
     res.render('contact.html.twig');
 });
