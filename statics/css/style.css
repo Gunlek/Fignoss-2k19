@@ -346,8 +346,52 @@ body, html {
   font-size: 4vw;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+#contact {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  min-height: 100%;
+  height: auto;
+}
+
+#contact .row {
+  position: relative;
+}
+
+#contact .col-4 {
+  text-align: center;
+  min-height: 100%;
+  position: relative;
+}
+
+#contact .img-center {
+  transform: translate(0, -50%);
+}
+
+#contact .people {
+  font-family: gravity-light;
+  margin: 40px 0;
+}
+
+#contact .people strong {
+  font-family: gravity-bold;
+}
+
+#contact .people h1 {
+  color: #ba7a6c;
+}
+
+#contact .people p {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+#contact p {
+  color: white;
+  font-family: gravity-light;
+  font-size: 1.75vw;
+  strong-font-family: gravity-bold;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

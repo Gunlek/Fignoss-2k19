@@ -20,4 +20,8 @@ app.get('/reservation/', (req, res) => {
     res.render('reservation.html.twig');
 });
 
+app.get('/contact/', (req, res) => {
+    res.render('contact.html.twig');
+});
+
 app.listen(1234);
