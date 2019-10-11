@@ -14,6 +14,11 @@
   font-family: "salvalyn";
   src: url("/fonts/Salvalyn-Demo.ttf");
 }
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0;
 }
@@ -25,14 +30,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 80px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar hr {
   position: absolute;
-  top: 90px;
+  top: 70px;
   width: 90%;
   right: 0;
   color: #ecd2b3;
@@ -44,13 +49,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   top: 0;
-  line-height: 100px;
+  line-height: 80px;
   margin: 0 10px;
 }
 
 .navbar .left-nav img {
   margin: 5px 20px;
-  height: 90px;
+  height: 70px;
 }
 
 .navbar .right-nav {
@@ -67,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .right-nav ul li {
   float: left;
-  line-height: 100px;
+  line-height: 80px;
   margin: 0 3vw;
   position: relative;
 }
@@ -110,7 +115,7 @@ body, html {
 }
 
 .page .container {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .page .main-brand {
@@ -187,13 +192,16 @@ body, html {
 
 #gala-section {
   background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
   position: relative;
+  height: auto;
+  min-height: 100%;
 }
 
 #gala-section .section-header {
   width: 100%;
   position: absolute;
-  top: 100px;
+  top: 80px;
 }
 
 #gala-section .container {
@@ -209,7 +217,16 @@ body, html {
   width: 30%;
 }
 
-#gala-section #droitEntree {
+#numbers {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: auto !important;
+  min-height: 45% !important;
+}
+
+#numbers #droitEntree {
   position: absolute;
   font-family: gravity-light;
   bottom: 5%;
@@ -331,7 +348,7 @@ body, html {
 }
 
 #reservation .container {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 #reservation .container p {
@@ -363,10 +380,6 @@ body, html {
   position: relative;
 }
 
-#contact .img-center {
-  transform: translate(0, -20%);
-}
-
 #contact .people {
   font-family: gravity-light;
   margin: 40px 0;
@@ -392,113 +405,29 @@ body, html {
   strong-font-family: gravity-bold;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+#artistes .container {
+  padding-top: 0;
+}
+
+#artistes .container .section-header {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  z-index: 99;
+}
+
+#artistes .container .section-header h1 {
+  width: 30%;
+}
+
+#artistes .container .section-header hr {
+  width: 30%;
+}
+
+#gala-section .container {
+  padding-top: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */

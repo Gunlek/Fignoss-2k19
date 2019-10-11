@@ -1,4 +1,4 @@
-$menu-height: 100px
+$menu-height: 80px
 $menu-items-distance: 3vw
 $font-color-1: #ecd2b3
 $nav-opacity: 0.4
@@ -35,6 +35,10 @@ $home-background-3: url("/img/compressor/background-compressor.png")
     background-clip: text
     -webkit-background-clip: text
     color: transparent
+
+body, html
+    height: 100%
+    min-height: 100%
 
 h1, h2, h3, h4, h5, h6
     margin: 0 0
@@ -176,7 +180,10 @@ body, html
 
 #gala-section
     background-image: $home-background-3
+    background-size: cover
     position: relative
+    height: auto
+    min-height: 100%
 
     .section-header
         width: 100%
@@ -192,6 +199,14 @@ body, html
     
     hr
         width: 30%
+    
+#numbers
+    background-image: $home-background-3
+    background-size: cover
+    position: absolute
+    width: 100%
+    height: auto !important
+    min-height: 45% !important
 
     #droitEntree
         position: absolute
@@ -319,9 +334,6 @@ body, html
         text-align: center
         min-height: 100%
         position: relative
-    
-    .img-center
-        transform: translate(0, -20%)
 
     .people
         font-family: gravity-light
@@ -342,3 +354,21 @@ body, html
 
         strong:
             font-family: gravity-bold
+
+#artistes .container
+    padding-top: 0
+
+    .section-header
+        width: 100%
+        position: absolute
+        top: $menu-height
+        z-index: 99
+
+        h1
+            width: 30%
+
+        hr
+            width: 30%
+
+#gala-section .container
+    padding-top: 0
