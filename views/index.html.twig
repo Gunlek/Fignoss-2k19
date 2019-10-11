@@ -5,7 +5,7 @@
     {% include 'utils/menu.html.twig' %}
     <div class="page" id="first-home">
         <div class="main-brand">
-            <img style="width: 100%;" src="/img/compressor/home_title-compressor.png" alt="La Nuit des Fignoss -- GRAND GALA DES ARTS ET METIERS" />
+            <img id="titleImage" style="width: 100%;display: none;" src="/img/compressor/home_title-compressor.png" alt="La Nuit des Fignoss -- GRAND GALA DES ARTS ET METIERS" />
             <!-- <h1>LA NUIT DES FIGNOSS</h1>
             <h2>GRAND GALA DES ARTS ET METIERS</h2> -->
         </div>
@@ -77,4 +77,11 @@
             </div>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $("#titleImage").toggle( "clip" );
+        });
+    </script>
 </body>
