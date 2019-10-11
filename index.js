@@ -50,6 +50,10 @@ app.get('/contact/', (req, res) => {
     res.render('contact.html.twig');
 });
 
-httpsServer.listen(1234, () => {
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
 	console.log('HTTPS Server running on port 443');
 });
