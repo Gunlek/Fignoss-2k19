@@ -371,6 +371,14 @@ body, html {
   height: auto;
 }
 
+#contact .section-header hr {
+  width: 30%;
+}
+
+#contact .section-header h1 {
+  width: 25%;
+}
+
 #contact .row {
   position: relative;
 }
