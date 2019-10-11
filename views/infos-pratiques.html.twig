@@ -15,14 +15,10 @@
             <br/><strong>Horaires: 22h à 6h</strong></p>
             <div id="map"></div>
             <script>
-                // Initialize and add the map
                 function initMap() {
-                // The location of Uluru
                 var campus_lille = {lat: 50.628564, lng: 3.071217};
-                // The map, centered at Uluru
                 var map = new google.maps.Map(
                     document.getElementById('map'), {zoom: 17, center: campus_lille});
-                // The marker, positioned at Uluru
                 var marker = new google.maps.Marker({position: campus_lille, map: map});
                 }
             </script>
