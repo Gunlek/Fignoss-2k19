@@ -8,8 +8,8 @@ app.get('/', (req, res) =>{
     res.render('index.html.twig');
 });
 
-app.get('/comment-venir/', (req, res) => {
-    res.render('comment-venir.html.twig');
+app.get('/infos-pratiques/', (req, res) => {
+    res.render('infos-pratiques.html.twig');
 });
 
 app.get('/le-gala/', (req, res) => {
