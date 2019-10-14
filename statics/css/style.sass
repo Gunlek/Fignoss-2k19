@@ -289,6 +289,10 @@ body, html
     .col-4
         width: 33%
         display: inline-block
+    
+    .col-6
+        width: 49.5%
+        display: inline-block
 
 .counter-group
     text-align: center
@@ -318,13 +322,55 @@ body, html
 
     .container
         padding-top: $menu-height
-        p
+        .billeterie
             @include centered
             font-family: gravity-light
             width: 100%
             text-align: center
             color: $font-color-1
             font-size: 4vw
+
+            .col-6
+                text-align: center
+                position: relative
+
+                .top-hr
+                    position: absolute
+                    margin: 0 0
+                    top: 0
+                    right: 0
+                    padding: 0 0
+                    width: 0%
+                    border: 0.5px solid rgba(236,210,179, 0.6)
+                    opacity: 0.0
+                    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out
+                
+                .bot-hr
+                    position: absolute
+                    margin: 0 0
+                    bottom: 0
+                    left: 0
+                    padding: 0 0
+                    width: 0%
+                    opacity: 0.0
+                    border: 0.5px solid rgba(236,210,179, 0.6)
+                    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out
+                    
+
+                a
+                    display: block
+                    text-decoration: none
+                    color: $font-color-1
+                    font-family: gravity-light
+                    transition: color 0.2s ease-in-out
+                
+                a:hover
+                    color: white
+                    transition: color 0.2s ease-in-out
+
+                    hr
+                        opacity: 1.0
+                        width: 100%
 
 #contact
     background-image: $home-background-3

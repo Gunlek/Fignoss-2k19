@@ -321,6 +321,11 @@ body, html {
   display: inline-block;
 }
 
+.row .col-6 {
+  width: 49.5%;
+  display: inline-block;
+}
+
 .counter-group {
   text-align: center;
   font-family: gravity-light;
@@ -356,7 +361,7 @@ body, html {
   padding-top: 60px;
 }
 
-#reservation .container p {
+#reservation .container .billeterie {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -366,6 +371,53 @@ body, html {
   text-align: center;
   color: #ecd2b3;
   font-size: 4vw;
+}
+
+#reservation .container .billeterie .col-6 {
+  text-align: center;
+  position: relative;
+}
+
+#reservation .container .billeterie .col-6 .top-hr {
+  position: absolute;
+  margin: 0 0;
+  top: 0;
+  right: 0;
+  padding: 0 0;
+  width: 0%;
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
+  opacity: 0;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#reservation .container .billeterie .col-6 .bot-hr {
+  position: absolute;
+  margin: 0 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 0;
+  width: 0%;
+  opacity: 0;
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#reservation .container .billeterie .col-6 a {
+  display: block;
+  text-decoration: none;
+  color: #ecd2b3;
+  font-family: gravity-light;
+  transition: color 0.2s ease-in-out;
+}
+
+#reservation .container .billeterie .col-6 a:hover {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+#reservation .container .billeterie .col-6 a:hover hr {
+  opacity: 1;
+  width: 100%;
 }
 
 #contact {
@@ -443,17 +495,6 @@ body, html {
   padding-top: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
