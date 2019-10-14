@@ -174,8 +174,14 @@ body, html {
   background-size: cover;
 }
 
+#second-home .main-brand {
+  width: 100%;
+}
+
 #second-home .main-brand h2 {
   font-family: gravity-light;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .section-header h1 {
@@ -294,10 +300,8 @@ body, html {
 }
 
 #sponsors .brands {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: 90%;
+  position: relative;
+  padding: 1% 5%;
 }
 
 .row {
@@ -439,6 +443,25 @@ body, html {
   padding-top: 0;
 }
 
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
