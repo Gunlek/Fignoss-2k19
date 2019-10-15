@@ -326,6 +326,10 @@ body, html {
   display: inline-block;
 }
 
+.row .col-12 {
+  width: 100%;
+}
+
 .counter-group {
   text-align: center;
   font-family: gravity-light;
@@ -361,7 +365,7 @@ body, html {
   padding-top: 60px;
 }
 
-#reservation .container .billeterie {
+#reservation .container .billetterie {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -373,12 +377,12 @@ body, html {
   font-size: 4vw;
 }
 
-#reservation .container .billeterie .col-6 {
+#reservation .container .billetterie .col-6 {
   text-align: center;
   position: relative;
 }
 
-#reservation .container .billeterie .col-6 .top-hr {
+#reservation .container .billetterie .col-6 .top-hr {
   position: absolute;
   margin: 0 0;
   top: 0;
@@ -390,7 +394,7 @@ body, html {
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-#reservation .container .billeterie .col-6 .bot-hr {
+#reservation .container .billetterie .col-6 .bot-hr {
   position: absolute;
   margin: 0 0;
   bottom: 0;
@@ -402,7 +406,7 @@ body, html {
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-#reservation .container .billeterie .col-6 a {
+#reservation .container .billetterie .col-6 a {
   display: block;
   text-decoration: none;
   color: #ecd2b3;
@@ -410,12 +414,12 @@ body, html {
   transition: color 0.2s ease-in-out;
 }
 
-#reservation .container .billeterie .col-6 a:hover {
+#reservation .container .billetterie .col-6 a:hover {
   color: white;
   transition: color 0.2s ease-in-out;
 }
 
-#reservation .container .billeterie .col-6 a:hover hr {
+#reservation .container .billetterie .col-6 a:hover hr {
   opacity: 1;
   width: 100%;
 }
@@ -495,6 +499,40 @@ body, html {
   padding-top: 0;
 }
 
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
