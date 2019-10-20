@@ -36,6 +36,9 @@ $home-background-3: url("/img/compressor/background-compressor.png")
     -webkit-background-clip: text
     color: transparent
 
+h1, h2, h3, h4, h5, h6
+    font-weight: normal !important
+
 body, html
     height: 100%
     min-height: 100%
@@ -119,7 +122,7 @@ body, html
     margin: 0 0
     
 .page
-    height: 100%
+    min-height: 100%
     position: relative
     text-align: center
     background-size: cover !important
@@ -312,7 +315,6 @@ body, html
         color: $font-color-1
 
 #reservation
-    height: 100%
     background-image: $home-background-3
     background-size: cover
 
@@ -326,7 +328,6 @@ body, html
     .container
         padding-top: $menu-height
         .billetterie
-            @include centered
             font-family: gravity-light
             width: 100%
             text-align: center
