@@ -2,11 +2,14 @@ $menu-height: 60px
 $menu-items-distance: 3vw
 $font-color-1: #ecd2b3
 $nav-opacity: 0.4
+$correct_menu_height: 20px
 
 // Backgrounds
 $home-background-1: url("/img/compressor/home_background_3-compressor.png")
 $home-background-2: url("/img/compressor/home_background_2-compressor.png")
 $home-background-3: url("/img/compressor/background-compressor.png")
+
+$breakpoint-tablet: 768px
 
 @font-face
     font-family: "gravity-light"
@@ -45,7 +48,7 @@ body, html
 
 h1, h2, h3, h4, h5, h6
     margin: 0 0
-    
+
 .navbar
     color: red
     position: absolute
@@ -54,6 +57,8 @@ h1, h2, h3, h4, h5, h6
     left: 0
     right: 0
     height: $menu-height
+    @media screen and (max-width: $breakpoint-tablet)
+        height: $menu-height - $correct_menu_height
     z-index: 99
     background-color: rgba(0, 0, 0, $nav-opacity)
 
@@ -71,11 +76,15 @@ h1, h2, h3, h4, h5, h6
         left: 0
         top: 0
         line-height: $menu-height
+        @media screen and (max-width: $breakpoint-tablet)
+            line-height: $menu-height - $correct_menu_height
         margin: 0 10px
 
         img
             margin: 5px 20px
             height: $menu-height - 10px
+            @media screen and (max-width: $breakpoint-tablet)
+                height: $menu-height - $correct_menu_height - 10px
     
     .right-nav
         position: absolute
@@ -90,6 +99,8 @@ h1, h2, h3, h4, h5, h6
             li
                 float: left
                 line-height: $menu-height
+                @media screen and (max-width: $breakpoint-tablet)
+                    line-height: $menu-height - $correct_menu_height
                 margin: 0 $menu-items-distance
                 position: relative
 
@@ -190,12 +201,15 @@ body, html
     background-size: cover
     position: relative
     height: auto
-    min-height: 100%
+    min-height: 0
 
     .section-header
         width: 100%
         position: absolute
         top: $menu-height
+        @media screen and ( max-width: $breakpoint-tablet )
+            top: $menu-height - $correct_menu_height
+            
 
     .container
         position: relative
@@ -290,7 +304,7 @@ body, html
         display: inline-block
 
     .col-4
-        width: 33%
+        width: 32%
         display: inline-block
     
     .col-6
