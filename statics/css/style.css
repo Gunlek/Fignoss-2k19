@@ -1,0 +1,557 @@
+@font-face {
+  font-family: "gravity-light";
+  src: url("/fonts/Gravity-UltraLight.otf");
+}
+@font-face {
+  font-family: "gravity-normal";
+  src: url("/fonts/Gravity-Light.otf");
+}
+@font-face {
+  font-family: "gravity-bold";
+  src: url("/fonts/Gravity-Regular.otf");
+}
+@font-face {
+  font-family: "salvalyn";
+  src: url("/fonts/Salvalyn-Demo.ttf");
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal !important;
+}
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-image: url("/img/compressor/home_background_3-compressor.png");
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0;
+}
+
+.navbar {
+  color: red;
+  position: absolute;
+  font-family: gravity-normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 40px;
+  }
+}
+.navbar hr {
+  position: absolute;
+  top: 60px;
+  margin: 0 0;
+  width: 90%;
+  right: 0;
+  color: #ecd2b3;
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
+  padding: 0 0;
+}
+
+.navbar .left-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 60px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .left-nav {
+    line-height: 40px;
+  }
+}
+.navbar .left-nav img {
+  margin: 5px 20px;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .left-nav img {
+    height: 30px;
+  }
+}
+.navbar .right-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+}
+
+.navbar .right-nav ul {
+  list-style: none;
+  margin: 0 0;
+}
+
+.navbar .right-nav ul li {
+  float: left;
+  line-height: 60px;
+  margin: 0 3vw;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .right-nav ul li {
+    line-height: 40px;
+  }
+}
+.navbar .right-nav ul li a {
+  text-decoration: none;
+  font-size: 2vw;
+  color: #ecd2b3;
+  transition: color 0.2s ease;
+}
+
+.navbar .right-nav ul li .slider {
+  border-bottom: 2px solid #ecd2b3;
+  width: 0%;
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  background-color: #ecd2b3;
+  transition: width 0.3s ease;
+}
+
+.navbar .right-nav ul li:hover .slider {
+  width: 100%;
+}
+
+.navbar .right-nav ul li:hover a {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+body, html {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.page {
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  background-size: cover !important;
+}
+
+.page .container {
+  margin: 0 0;
+  padding: 0 0;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.page .main-brand {
+  font-family: salvalyn;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page .main-brand h1 {
+  font-size: 75px;
+  background: radial-gradient(#e9cfb0, #8a634e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.page .main-brand h2 {
+  font-size: 50px;
+  color: #ecd2b3;
+}
+
+.page .low-brand {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 50px;
+  font-family: gravity-normal;
+}
+
+.page .low-brand h3 {
+  font-size: 60px;
+  background: radial-gradient(#e9cfb0, #8a634e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.page .low-brand h4 {
+  font-size: 40px;
+  background: radial-gradient(#e9cfb0, #8a634e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#first-home {
+  background-image: url("/img/compressor/home_background_3-compressor.png");
+  background-size: cover;
+}
+
+#second-home {
+  background-image: url("/img/compressor/home_background_2-compressor.png");
+  background-size: cover;
+}
+
+#second-home .main-brand {
+  width: 100%;
+}
+
+#second-home .main-brand h2 {
+  font-family: gravity-light;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-header h1 {
+  display: inline-block;
+  color: #ecd2b3;
+  font-size: 4.5vw;
+  font-family: salvalyn;
+}
+
+.section-header hr {
+  display: inline-block;
+  border: 1px solid #ecd2b3;
+  line-height: 50px;
+}
+
+#gala-section {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  position: relative;
+  height: auto;
+  min-height: 0;
+}
+
+#gala-section .section-header {
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  #gala-section .section-header {
+    top: 40px;
+  }
+}
+#gala-section .container {
+  position: relative;
+  text-align: center;
+}
+
+#gala-section h1 {
+  width: 30%;
+}
+
+#gala-section hr {
+  width: 30%;
+}
+
+#numbers {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: auto !important;
+  min-height: 45% !important;
+}
+
+#numbers #droitEntree {
+  position: absolute;
+  font-family: gravity-light;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: #ecd2b3;
+}
+
+#map-section {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  min-height: 100%;
+  height: auto;
+}
+
+#map-section .section-header h1 {
+  width: 65%;
+}
+
+#map-section .section-header hr {
+  width: 15%;
+}
+
+#map-section strong {
+  font-family: gravity-bold;
+}
+
+#map-section p {
+  color: white;
+  font-family: gravity-normal;
+  font-size: 2vw;
+}
+
+#map-section #map {
+  margin: 5px 0;
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#sponsors {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+}
+
+#sponsors .section-header h1 {
+  width: 25%;
+}
+
+#sponsors .section-header hr {
+  width: 32.5%;
+}
+
+#sponsors p {
+  font-family: gravity-normal;
+  color: #ecd2b3;
+  font-size: 40px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#sponsors .brands {
+  position: relative;
+  padding: 1% 5%;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  min-height: 10%;
+}
+
+.row .col-2 {
+  width: 15%;
+  display: inline-block;
+}
+
+.row .col-4 {
+  width: 32%;
+  display: inline-block;
+}
+
+.row .col-6 {
+  width: 49.5%;
+  display: inline-block;
+}
+
+.row .col-12 {
+  width: 100%;
+}
+
+.counter-group {
+  text-align: center;
+  font-family: gravity-light;
+}
+
+.counter-group .counter {
+  width: 100% !important;
+  margin: 0 auto;
+  color: white;
+  font-size: 8vw;
+}
+
+.counter-group h3 {
+  font-size: 2vw;
+  color: #ecd2b3;
+}
+
+#reservation {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+}
+
+#reservation .section-header h1 {
+  width: 30%;
+}
+
+#reservation .section-header hr {
+  width: 30%;
+}
+
+#reservation .container {
+  margin: 0 0;
+  padding: 0 0;
+  padding-top: 60px;
+}
+
+#reservation .container .billetterie {
+  font-family: gravity-light;
+  width: 100%;
+  text-align: center;
+  color: #ecd2b3;
+  font-size: 4vw;
+}
+
+#reservation .container .billetterie .col-6 {
+  text-align: center;
+  position: relative;
+}
+
+#reservation .container .billetterie .col-6 .top-hr {
+  position: absolute;
+  margin: 0 0;
+  top: 0;
+  right: 0;
+  padding: 0 0;
+  width: 0%;
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
+  opacity: 0;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#reservation .container .billetterie .col-6 .bot-hr {
+  position: absolute;
+  margin: 0 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 0;
+  width: 0%;
+  opacity: 0;
+  border: 0.5px solid rgba(236, 210, 179, 0.6);
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#reservation .container .billetterie .col-6 a {
+  display: block;
+  text-decoration: none;
+  color: #ecd2b3;
+  font-family: gravity-light;
+  transition: color 0.2s ease-in-out;
+}
+
+#reservation .container .billetterie .col-6 a:hover {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+#reservation .container .billetterie .col-6 a:hover hr {
+  opacity: 1;
+  width: 100%;
+}
+
+#contact {
+  background-image: url("/img/compressor/background-compressor.png");
+  background-size: cover;
+  min-height: 100%;
+  height: auto;
+  strong-font-family: gravity-bold;
+}
+
+#contact .section-header hr {
+  width: 30%;
+}
+
+#contact .section-header h1 {
+  width: 25%;
+}
+
+#contact .row {
+  position: relative;
+}
+
+#contact .col-4 {
+  text-align: center;
+  min-height: 100%;
+  position: relative;
+}
+
+#contact .people {
+  font-family: gravity-light;
+  margin: 40px 0;
+}
+
+#contact .people strong {
+  font-family: gravity-normal;
+  font-weight: bold;
+}
+
+#contact .people h1 {
+  color: #ba7a6c;
+}
+
+#contact .people p {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+#contact p {
+  color: white;
+  font-family: gravity-light;
+  font-size: 1.75vw;
+  strong-font-family: gravity-bold;
+}
+
+#artistes .container {
+  padding-top: 0;
+}
+
+#artistes .container .section-header {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  z-index: 99;
+}
+
+#artistes .container .section-header h1 {
+  width: 30%;
+}
+
+#artistes .container .section-header hr {
+  width: 30%;
+}
+
+#gala-section .container {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
