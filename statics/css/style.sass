@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6
 
     hr
         position: absolute
-        top: $menu-height - 10px
+        top: $menu-height
+        margin: 0 0
         width: 90%
         right: 0
         color: #ecd2b3
@@ -142,7 +143,10 @@ body, html
     background-size: cover !important
 
     .container
-        padding-top: $menu-height
+        margin: 0 0
+        padding: 0 0
+        width: 100% !important
+        max-width: none !important
 
     .main-brand
         font-family: salvalyn
@@ -209,7 +213,6 @@ body, html
     .section-header
         width: 100%
         position: absolute
-        top: $menu-height
         @media screen and ( max-width: $breakpoint-tablet )
             top: $menu-height - $correct_menu_height
             
@@ -365,6 +368,9 @@ body, html
     .col-12
         width: 100%
 
+.row-centered *
+    margin: 0 auto
+
 .counter-group
     text-align: center
     font-family: gravity-light
@@ -454,6 +460,11 @@ body, html
             width: 30%
         h1
             width: 25%
+    
+    .container
+        margin: 0 0
+        padding: 0 0
+        padding-top: $menu-height
 
     .row
         position: relative

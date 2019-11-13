@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar hr {
   position: absolute;
-  top: 50px;
+  top: 60px;
+  margin: 0 0;
   width: 90%;
   right: 0;
   color: #ecd2b3;
@@ -131,7 +132,10 @@ body, html {
   background-size: cover !important;
 }
 .page .container {
-  padding-top: 60px;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100% !important;
+  max-width: none !important;
 }
 .page .main-brand {
   font-family: salvalyn;
@@ -213,7 +217,6 @@ body, html {
 #gala-section .section-header {
   width: 100%;
   position: absolute;
-  top: 60px;
 }
 @media screen and (max-width: 768px) {
   #gala-section .section-header {
@@ -368,6 +371,10 @@ body, html {
   width: 100%;
 }
 
+.row-centered * {
+  margin: 0 auto;
+}
+
 .counter-group {
   text-align: center;
   font-family: gravity-light;
@@ -459,6 +466,11 @@ body, html {
 }
 #contact .section-header h1 {
   width: 25%;
+}
+#contact .container {
+  margin: 0 0;
+  padding: 0 0;
+  padding-top: 60px;
 }
 #contact .row {
   position: relative;
