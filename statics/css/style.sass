@@ -499,12 +499,10 @@ body, html
             font-family: gravity-bold
 
 #artistes .container
-    padding-top: 0
+    margin-top: $menu-height
 
     .section-header
         width: 100%
-        position: absolute
-        top: $menu-height
         z-index: 99
 
         h1
@@ -512,6 +510,24 @@ body, html
 
         hr
             width: 30%
+    
+    h3
+        font-size: 4em
+        font-family: gravity-light
+        @include circular-gradient(#e9cfb0, #8a634e)
+    
+.thumbnail
+    .row
+        margin: 0 0
+        padding: 0 0
+    
+    .col
+        margin: 0 0
+        padding: 0 0
+    
+    img
+        margin: 0 0
+        padding: 0 0
 
 #gala-section .container
     padding-top: 0

@@ -503,12 +503,10 @@ body, html {
 }
 
 #artistes .container {
-  padding-top: 0;
+  margin-top: 60px;
 }
 #artistes .container .section-header {
   width: 100%;
-  position: absolute;
-  top: 60px;
   z-index: 99;
 }
 #artistes .container .section-header h1 {
@@ -516,6 +514,27 @@ body, html {
 }
 #artistes .container .section-header hr {
   width: 30%;
+}
+#artistes .container h3 {
+  font-size: 4em;
+  font-family: gravity-light;
+  background: radial-gradient(#e9cfb0, #8a634e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.thumbnail .row {
+  margin: 0 0;
+  padding: 0 0;
+}
+.thumbnail .col {
+  margin: 0 0;
+  padding: 0 0;
+}
+.thumbnail img {
+  margin: 0 0;
+  padding: 0 0;
 }
 
 #gala-section .container {
