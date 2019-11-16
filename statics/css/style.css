@@ -328,6 +328,9 @@ body, html {
   display: inline-block;
   line-height: 1.5em;
   height: 1.5em;
+  font-size: 2em;
+  text-align: right;
+  padding-right: 20px;
   width: 20%;
   font-family: gravity-normal;
   color: white;
@@ -337,6 +340,11 @@ body, html {
   border: 0.5px solid white;
   width: 75%;
   line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  #defile .sub-section hr {
+    display: none;
+  }
 }
 #defile h3 {
   font-family: gravity-normal;
