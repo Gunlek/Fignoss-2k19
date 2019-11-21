@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     height: 40px;
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 0.5px solid rgba(236, 210, 179, 0.6);
   padding: 0 0;
 }
+
 .navbar .left-nav {
   position: absolute;
   left: 0;
@@ -62,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 60px;
   margin: 0 10px;
 }
+
 @media screen and (max-width: 768px) {
   .navbar .left-nav {
     line-height: 40px;
@@ -71,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 20px;
   height: 50px;
 }
+
 @media screen and (max-width: 768px) {
   .navbar .left-nav img {
     height: 30px;
@@ -82,16 +86,19 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   margin-right: 10px;
 }
+
 .navbar .right-nav ul {
   list-style: none;
   margin: 0 0;
 }
+
 .navbar .right-nav ul li {
   float: left;
   line-height: 60px;
   margin: 0 3vw;
   position: relative;
 }
+
 @media screen and (max-width: 768px) {
   .navbar .right-nav ul li {
     line-height: 40px;
@@ -103,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ecd2b3;
   transition: color 0.2s ease;
 }
+
 .navbar .right-nav ul li .slider {
   border-bottom: 2px solid #ecd2b3;
   width: 0%;
@@ -112,9 +120,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ecd2b3;
   transition: width 0.3s ease;
 }
+
 .navbar .right-nav ul li:hover .slider {
   width: 100%;
 }
+
 .navbar .right-nav ul li:hover a {
   color: white;
   transition: color 0.2s ease;
@@ -131,12 +141,14 @@ body, html {
   text-align: center;
   background-size: cover !important;
 }
+
 .page .container {
   margin: 0 0;
   padding: 0 0;
   width: 100% !important;
   max-width: none !important;
 }
+
 .page .main-brand {
   font-family: salvalyn;
   position: absolute;
@@ -144,6 +156,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .page .main-brand h1 {
   font-size: 75px;
   background: radial-gradient(#e9cfb0, #8a634e);
@@ -151,10 +164,12 @@ body, html {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .page .main-brand h2 {
   font-size: 50px;
   color: #ecd2b3;
 }
+
 .page .low-brand {
   position: absolute;
   left: 50%;
@@ -162,6 +177,7 @@ body, html {
   bottom: 50px;
   font-family: gravity-normal;
 }
+
 .page .low-brand h3 {
   font-size: 60px;
   background: radial-gradient(#e9cfb0, #8a634e);
@@ -169,6 +185,7 @@ body, html {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .page .low-brand h4 {
   font-size: 40px;
   background: radial-gradient(#e9cfb0, #8a634e);
@@ -186,9 +203,11 @@ body, html {
   background-image: url("/img/compressor/home_background_2-compressor.png");
   background-size: cover;
 }
+
 #second-home .main-brand {
   width: 100%;
 }
+
 #second-home .main-brand h2 {
   font-family: gravity-light;
   width: 80%;
@@ -201,6 +220,7 @@ body, html {
   font-size: 4.5vw;
   font-family: salvalyn;
 }
+
 .section-header hr {
   display: inline-block;
   border: 1px solid #ecd2b3;
@@ -214,10 +234,12 @@ body, html {
   height: auto;
   min-height: 0;
 }
+
 #gala-section .section-header {
   width: 100%;
   position: absolute;
 }
+
 @media screen and (max-width: 768px) {
   #gala-section .section-header {
     top: 40px;
@@ -227,9 +249,11 @@ body, html {
   position: relative;
   text-align: center;
 }
+
 #gala-section h1 {
   width: 30%;
 }
+
 #gala-section hr {
   width: 30%;
 }
@@ -242,6 +266,7 @@ body, html {
   height: auto !important;
   min-height: 45% !important;
 }
+
 #numbers #droitEntree {
   position: absolute;
   font-family: gravity-light;
@@ -257,20 +282,25 @@ body, html {
   min-height: 100%;
   height: auto;
 }
+
 #map-section .section-header h1 {
   width: 65%;
 }
+
 #map-section .section-header hr {
   width: 15%;
 }
+
 #map-section strong {
   font-family: gravity-bold;
 }
+
 #map-section p {
   color: white;
   font-family: gravity-normal;
   font-size: 2vw;
 }
+
 #map-section #map {
   margin: 5px 0;
   height: 50%;
@@ -284,12 +314,15 @@ body, html {
   padding-top: 50px;
   position: relative;
 }
+
 #sponsors .section-header h1 {
   width: 25%;
 }
+
 #sponsors .section-header hr {
   width: 32.5%;
 }
+
 #sponsors p {
   font-family: gravity-normal;
   color: #ecd2b3;
@@ -299,6 +332,7 @@ body, html {
   margin: 0 auto;
   margin-top: 5%;
 }
+
 #sponsors .brands {
   position: relative;
   padding: 1% 5%;
@@ -309,21 +343,26 @@ body, html {
   background-size: cover;
   position: relative;
 }
+
 #defile .section-header h1 {
   width: 50%;
   font-gravity: salvalyn;
 }
+
 #defile .section-header hr {
   width: 20%;
 }
+
 #defile .row {
   width: 90%;
   margin-left: 10%;
 }
+
 #defile .sub-section {
   margin-right: 0;
   padding-right: 0;
 }
+
 #defile .sub-section h4 {
   display: inline-block;
   line-height: 1.5em;
@@ -331,16 +370,17 @@ body, html {
   font-size: 2em;
   text-align: right;
   padding-right: 20px;
-  width: 20%;
   font-family: gravity-normal;
   color: white;
 }
+
 #defile .sub-section hr {
   display: inline-block;
   border: 0.5px solid white;
-  width: 75%;
+  width: 100%;
   line-height: 50px;
 }
+
 @media screen and (max-width: 768px) {
   #defile .sub-section hr {
     display: none;
@@ -359,22 +399,27 @@ body, html {
   text-align: left;
   min-height: 10%;
 }
+
 .row .col-2 {
   width: 15%;
   display: inline-block;
 }
+
 .row .col-4 {
   width: 32%;
   display: inline-block;
 }
+
 .row .col-6 {
   width: 49.5%;
   display: inline-block;
 }
+
 .row .col-8 {
   width: 66%;
   display: inline-block;
 }
+
 .row .col-12 {
   width: 100%;
 }
@@ -387,12 +432,14 @@ body, html {
   text-align: center;
   font-family: gravity-light;
 }
+
 .counter-group .counter {
   width: 100% !important;
   margin: 0 auto;
   color: white;
   font-size: 8vw;
 }
+
 .counter-group h3 {
   font-size: 2vw;
   color: #ecd2b3;
@@ -402,17 +449,21 @@ body, html {
   background-image: url("/img/compressor/background-compressor.png");
   background-size: cover;
 }
+
 #reservation .section-header h1 {
   width: 30%;
 }
+
 #reservation .section-header hr {
   width: 30%;
 }
+
 #reservation .container {
   margin: 0 0;
   padding: 0 0;
   padding-top: 60px;
 }
+
 #reservation .container .billetterie {
   font-family: gravity-light;
   width: 100%;
@@ -420,10 +471,12 @@ body, html {
   color: #ecd2b3;
   font-size: 4vw;
 }
+
 #reservation .container .billetterie .col-6 {
   text-align: center;
   position: relative;
 }
+
 #reservation .container .billetterie .col-6 .top-hr {
   position: absolute;
   margin: 0 0;
@@ -435,6 +488,7 @@ body, html {
   opacity: 0;
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 #reservation .container .billetterie .col-6 .bot-hr {
   position: absolute;
   margin: 0 0;
@@ -446,6 +500,7 @@ body, html {
   border: 0.5px solid rgba(236, 210, 179, 0.6);
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 #reservation .container .billetterie .col-6 a {
   display: block;
   text-decoration: none;
@@ -453,10 +508,12 @@ body, html {
   font-family: gravity-light;
   transition: color 0.2s ease-in-out;
 }
+
 #reservation .container .billetterie .col-6 a:hover {
   color: white;
   transition: color 0.2s ease-in-out;
 }
+
 #reservation .container .billetterie .col-6 a:hover hr {
   opacity: 1;
   width: 100%;
@@ -469,40 +526,50 @@ body, html {
   height: auto;
   strong-font-family: gravity-bold;
 }
+
 #contact .section-header hr {
   width: 30%;
 }
+
 #contact .section-header h1 {
   width: 25%;
 }
+
 #contact .container {
   margin: 0 0;
   padding: 0 0;
   padding-top: 60px;
 }
+
 #contact .row {
   position: relative;
 }
+
 #contact .col-4 {
   text-align: center;
   min-height: 100%;
   position: relative;
 }
+
 #contact .people {
   font-family: gravity-light;
   margin: 40px 0;
 }
+
 #contact .people strong {
   font-family: gravity-normal;
   font-weight: bold;
 }
+
 #contact .people h1 {
   color: #ba7a6c;
 }
+
 #contact .people p {
   margin: 0 0;
   padding: 0 0;
 }
+
 #contact p {
   color: white;
   font-family: gravity-light;
@@ -513,16 +580,20 @@ body, html {
 #artistes .container {
   margin-top: 60px;
 }
+
 #artistes .container .section-header {
   width: 100%;
   z-index: 99;
 }
+
 #artistes .container .section-header h1 {
   width: 30%;
 }
+
 #artistes .container .section-header hr {
   width: 30%;
 }
+
 #artistes .container h3 {
   font-size: 4em;
   font-family: gravity-light;
@@ -536,10 +607,12 @@ body, html {
   margin: 0 0;
   padding: 0 0;
 }
+
 .thumbnail .col {
   margin: 0 0;
   padding: 0 0;
 }
+
 .thumbnail img {
   margin: 0 0;
   padding: 0 0;
@@ -548,5 +621,14 @@ body, html {
 #gala-section .container {
   padding-top: 0;
 }
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
